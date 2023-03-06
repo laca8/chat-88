@@ -19,12 +19,12 @@ const Messenger = () => {
   const user = localStorage.getItem("userInfo")
     ? JSON.parse(localStorage.getItem("userInfo"))
     : null;
-  const ENDPOINT = "http://localhost:6000";
+  const ENDPOINT = "http://localhost:8900";
 
   useEffect(() => {
     socket.current = io(ENDPOINT, {
       cors: {
-        origin: "http://localhost:6000",
+        origin: "http://localhost:8900",
         credentials: true,
       },
       transports: ["websocket"],
