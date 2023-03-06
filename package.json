@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "socket": "npm start --prefix socket",
-
+    "socket": "npm run server --prefix socket",
     "server": "concurrently \"npm run server\" \"npm run socket\" ",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
