@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": "http://127.0.0.1:5001",
+      "/api": "https://chat-88-puce.vercel.app/",
     },
   },
 });
